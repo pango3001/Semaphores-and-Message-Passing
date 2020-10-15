@@ -135,9 +135,7 @@ int main(int argc, char **argv){
 
         //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // ASSIGNMENT 3 PART SEMAPHORE INIT
-	//union semun arg;
-  
-
+	
 	if ((ptr->sem_key = ftok("master.c", 'J')) == -1) {
 		perror("ftok");
  	exit(1);
@@ -150,23 +148,15 @@ int main(int argc, char **argv){
 	exit(1);
 	}
 	/* initialize semaphore #0 to 1: */
-	//arg.val = 1;
+	
 	if (semctl(ptr->sem_id, 0, SETVAL, 1) == -1) {
-
-
 		perror("semctl");
 	exit(1);
 	}
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	
 
 
-/*	
-	ptr->sem_set_id = semget(IPC_PRIVATE, 1, IPC_CREAT | 0600);
-	if (ptr->sem_set_id == -1) {
-   		perror("main: semget");
-    		exit(1);
-	}
-
-*/	
 	// max child processes cannot exceed total processes called
 	if (max_total_childs > max_childs_master){
 		max_total_childs = max_childs_master;

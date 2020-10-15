@@ -30,29 +30,24 @@ bool isPalindrome(char str[]);
 
 
 typedef struct{
-	unsigned int sem_id;
-	unsigned int sem_key;
-	unsigned int id;
-	unsigned int turn;
+	unsigned int sem_id;  // id for semaphores
+	unsigned int sem_key; // key for semaphore
+	unsigned int id; // id for processes
+	unsigned int turn; //
 	unsigned int children; //amount of child processes 
         unsigned int flags[20];  // state of using critical section
         char strings[64][64]; // array of strings
 	pid_t pgid;
-	struct sembuf sem_op;
 } shared_memory;
 shared_memory *ptr; // pointer for the shared memory
 int shm_id;
 
 
 int main(int argc, char ** argv){
-	//ptr->in_critical = false;
-//	printf("Palin Starting...\n");
 	signal(SIGTERM, signal_handle);
 	signal(SIGUSR1, timer);
 	int id = atoi(argv[1]);
-//	printf("id: %d\n", id);
-//	return 0;
-	 	
+		 	
 	unsigned int key = ftok("./master", 'a');	
 
 	shm_id = shmget(key, sizeof(shared_memory), PERMS | IPC_CREAT);
