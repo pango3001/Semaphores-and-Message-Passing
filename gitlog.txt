@@ -1,0 +1,35 @@
+commit 7751a174d0d7f7bc63f5b0fe0a906e8101cdc55f
+Author: Jesse McCarville <pango3001@gmail.com>
+Date:   Fri Oct 16 14:14:23 2020 -0500
+
+    updated readme
+
+commit 36f9ff5e43e50d1a2043c3873813ef757b82c823
+Author: Jesse McCarville <pango3001@gmail.com>
+Date:   Fri Oct 16 11:14:25 2020 -0500
+
+    updated readme
+
+commit d551b4d98c213b6e93fa0a16848c4ef1ad4becb3
+Author: Jesse McCarville <pango3001@gmail.com>
+Date:   Wed Oct 14 19:38:35 2020 -0500
+
+    Cleanup
+
+commit 7ab43b7627fef08c7e83a8b0c47edb45d0f9ce68
+Author: Jesse McCarville <pango3001@gmail.com>
+Date:   Wed Oct 14 14:17:29 2020 -0500
+
+    Changed POSIX sems to sys V
+
+commit 892f6a543f10845d0bc1ad3d5618d238031acd6a
+Author: Jesse McCarville <pango3001@gmail.com>
+Date:   Wed Oct 14 08:08:36 2020 -0500
+
+    init
+
+commit b99cdff7dc532aed9327dcad41d9817fb6099965
+Author: pango3001 <pango3001@gmail.com>
+Date:   Tue Oct 13 15:59:49 2020 -0500
+
+    Initial commit
