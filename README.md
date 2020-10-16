@@ -2,6 +2,7 @@
 CS 4760 Assignment 3 -
 Concurrent UNIX Processes and shared memory
 using semaphores
+
 NOTES
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -9,6 +10,7 @@ Perform a make clean before running of master.
 This will clean up the output files nopalin.out palin.out and output.log
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+git log can be found in the gitlog.txt file
 
 SPECIAL NOTES
 +perror used
